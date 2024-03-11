@@ -1,0 +1,303 @@
+header{
+    margin: 40px 0 0 40px;
+    gap: 40px;
+}
+body{
+    background-color: #F3F5FC;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main{
+    display: flex;
+    flex-grow: 1;
+    gap: 40px;
+    flex-direction: row;
+    margin-left: auto;
+    margin-right: auto;
+}
+.encriptador{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+#txtencriptar, ::placeholder{
+    font-family: inter;
+    border: none;
+    font-size: 32px;
+    resize: none;
+    color: #0A3871;
+    outline: none;
+    display: flex;
+    background: none;
+}
+#txtencriptar{
+    height: 80%;
+    width: 80%;
+}
+aside{
+    background-color: white;
+    width: 336px;
+    min-height: 81.1vh;
+    border-radius: 32px;
+    box-shadow: 7px 8px 20px 0px rgba(0, 0, 0, 0.2);
+    padding: 24px 48px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem !important;
+    align-items: center;
+}
+#imagen{
+    display: flex;
+    height: 304px;
+    width: 336px;
+}
+#none > h1{
+    display: inline-block;
+    font-size: 24px;
+    font-family: inter;
+    font-weight: bold;
+    text-align: center;
+    line-height: 28.8px;
+    margin-top: 40px;
+}
+#none > p{
+    font-family: inter;
+    font-size: 16px;
+    line-height: 24px;
+    display: inline-block;
+    text-align: center;
+    margin-top: 15px;
+}
+#copiar{
+    display: none;
+    width: 336px;
+    height: 67px;
+    border-radius: 24px;
+    background: transparent;
+    border: solid 1px #0A3871;
+}
+#resultado{
+    display: none;
+    text-align: center;
+    font-size: 32px;
+    color: #495057;
+    border: none;
+    resize: none;
+    outline: none;
+    background: none;
+}
+#copiar{
+    color: #0A3871;
+    background: transparent;
+    border: 1px solid #0A3871;
+}
+.botones{
+    display: inline-block;
+    margin-bottom: 15px;
+}
+.info > p{
+    color: #868E96;
+    font-family: inter;
+    font-size: 12px;
+    margin-left: 360px;
+    margin-bottom: 15px;
+    display: block;
+}
+#btnencriptar{
+    width: 328px;
+    height: 67px;
+    border: none;
+    border-radius: 24px;
+    color: white;
+    background-color: #0A3871;
+    cursor: pointer;
+}
+#btndesencriptar{
+    width: 328px;
+    height: 67px;
+    border: solid 1px#0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    background-color: #D8DFE8;
+    cursor: pointer;
+}
+footer{
+    height: 60px;
+    font-family: inter;
+    text-align: center;
+    background-color: #0A3871;
+    color: white;
+    font-size: normal;
+    text-decoration: none;
+    gap: 20px;
+    align-items: center !important;
+    justify-content: center !important;
+    display: flex;
+}
+#logo-pie{
+    color: #D8DFE8;
+    max-width: 30px;
+    display: inline-block;
+}
+h3{
+    display: inline-block;
+}
+a{
+    display: inline-block;
+}
+@media screen and (max-width: 1400px) {
+    aside{
+        top: -30px;
+        position: relative;
+        min-height: 730px;
+        min-width: 432px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    main{
+        max-width: 1320px ;
+    }
+    #txtencriptar{
+        min-height: 600px !important;
+    }
+    #resultado{
+        min-height: 600px !important;
+    }
+}
+@media screen and (max-width:1050px){
+    header{
+        margin: unset;
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+    main{
+        flex-direction: column;
+        max-width: 960px;
+    }
+    #txtencriptar{
+        min-height: 350px !important;
+        display: flex;
+        width: 100%;
+    }
+    .info{
+        width: 100%!important;
+    }
+    .info > p{
+        margin: unset;
+        margin-left: 20px;
+        margin-bottom: 10px;
+    }
+    .btnsfuncion{
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+    }
+    .botones{
+        width: 100% !important;
+    }
+    aside{
+        min-height: unset;
+        min-width: 62vh;
+        min-height: 6vh;
+    }
+    #resultado{
+        min-height: 200px;
+    }
+    #copiar{
+        width: 100%;
+    }
+    #none{
+        display: flex;
+        flex-direction: column;
+    }
+    #none > p{
+        margin-top: unset;
+    }
+    #none > h1{
+        margin-top: unset;
+    }
+    #imagen{
+        display: none;
+    }    
+}
+@media screen and (max-width:480px){
+    header{
+        margin: 0 !important;
+        padding: 24px 0 0 0 !important;
+    }
+    body{
+        min-height: 100vh !important;
+        max-width: 100vh !important;
+        flex-direction: column;
+    }
+    main{
+        gap: 0px !important;
+        margin: 24px 0px 0 0 !important;
+        padding: 0 12px !important;
+        flex-direction: column;
+        --bs-gutter-x: 1.5rem !important;
+        --bs-gutter-y:  0 !important;
+    }
+    #txtencriptar{
+        margin: 0 !important;
+        width: 100% !important;
+        min-height: 200px !important;
+        display: block;
+        font-size: 25px !important;
+        display: flex;
+    }
+    .encriptador{
+        max-height: 100% !important;
+        display: block;
+        flex-direction: column;
+    }
+    ::placeholder{
+        font-size: 25px;
+        text-align: left;
+        margin-left: 0px !important;
+    }
+    .info > p{
+        margin: 0 !important;
+    }
+    .info{
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        max-height: 100% !important;
+        max-width: 100% !important;
+    }
+    #btnencriptar, #btndesencriptar{
+        margin: 5px 0 !important;
+        width: 100%;
+    }
+    aside{
+        width: unset;
+        height: unset;
+        min-width: 100% !important;
+        max-height: 100% !important;
+        min-height:  unset !important;
+        margin: 70px 0 16px 0 !important;
+        display: flex;
+        box-sizing: border-box;
+        align-items: center;
+        justify-content: unset !important;
+    }
+    #resultado{
+        max-width: 100% !important;
+        max-height: 50vh !important;
+        box-sizing: border-box;
+    }
+    #copiar{
+        max-width: 100% !important;
+        max-height: 100% !important;
+    }
+    footer{
+        width: 100% !important;
+    }
+    #imagen{
+        display: none;
+    }
+}

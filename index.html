@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <script src="app.js" defer></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width""">
+        <title>Encriptador y Desencriptador</title>
+    </head>
+    <body>
+        <header>
+            <div class="encabezado">
+                <img src="Imagenes Principales/Logo.png" alt="Logo Alura">
+            </div>
+        </header>  
+        <main>
+            <section class="encriptador">
+                <textarea id="txtencriptar" placeholder="Ingrese el texto aqui" required></textarea>
+                <div class="info">
+                    <p>Solo letras minúsculas y sin acentos</p>
+                    <div class="btnsfuncion">
+                        <button onclick="btnencriptar()" id="btnencriptar" class="botones">Encriptar</button>
+                        <button onclick="btndesencriptar()" id="btndesencriptar" class="botones">Desencriptar</button> 
+                    </div>
+                </div>
+            </section>
+            <aside class="resultado">
+                <textarea id="resultado" cols="50" rows="25" readonly></textarea>
+                <img id="imagen" src="Imagenes Principales/Muñeco.png" alt="Muñeco buscando">
+                <div id="none">
+                    <h1 class="instruccion">Ningún mensaje fue encontrado</h1>
+                    <p class="instruccion">Ingresa el texto que desees encriptar o desencriptar</p>
+                </div>
+                <button id="copiar" onclick="copy()">Copiar</button>
+            </aside>
+        </main>  
+    </body>
+    <footer class="pie">
+        <a href="https://github.com/Mclovininin" target="_blank">
+            <img id="logo-pie" src="Imagenes Principales/github-logo.png" alt="GitHub Logo">
+        </a>
+        <h3>Made By Rafael Juarez</h3>
+    </footer>
+</html>
